@@ -10,3 +10,10 @@ console.log(`Origin = ${getLocation.origin || null}`);
 console.log(`Path name = ${getLocation.pathname || null}`);
 console.log(`Port = ${getLocation.port || null}`);
 console.log(`Protocol = ${getLocation.protocol || null}`);
+
+const reloadFunc = () => {
+    getLocation.reload();
+};
+const replaceFunc = () => {
+    getLocation.replace('https://www.google.com/');
+};
